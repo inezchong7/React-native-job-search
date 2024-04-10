@@ -5,10 +5,9 @@
 *App was created using Expo. 
 1. Install Android Studio https://developer.android.com/studio
 2. npm install
-3. Open Android Studio -> More actions -> Virtual Device Manager -> Medium phone -> Tiramisu (download) -> Next -> Finish
-4. Open Device Manager -> run Medium phone
-5. npm start
-6. Type 'a' to run app on Android emulator (the medium phone)
+3. Open Android Studio -> More actions -> Virtual Device Manager -> run Pixel phone emulator
+4. npx expo start
+5. Type 'a' to run app on the emulator 
 
 
 <h3>Key Differences</h3>
