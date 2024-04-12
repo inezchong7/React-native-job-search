@@ -12,6 +12,9 @@
 <h3>Additional resources used</h3>
 <ul>
   <li>Rapid API Hub: https://rapidapi.com/hub</li>
+    <ul>
+      <li>JSearch: Fast and Reliable Job Searches on LinkedIn, Indeed, Glassdoor, and others on Google for Jobs in Real-Time.</li>
+    </ul>
 </ul>
 
 <h3>Key Differences</h3>
