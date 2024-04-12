@@ -18,6 +18,7 @@ const PopularJobCard = ({item, selectedJob, handleCardPress}) => {
           source={{uri: checkImageURL(item.employer_logo)
             // if valid images, display them
             ? item.employer_logo
+            // if no image available, use placeholder image
             : "https://t4.ftcdn.net/jpg/05/05/61/73/360_F_505617309_NN1CW7diNmGXJfMicpY9eXHKV4sqzO5H.jpg",
           }}
           resizeMode='contain'
