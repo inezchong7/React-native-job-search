@@ -27,10 +27,17 @@ const displayTabContent = () => {
         case "Qualifications":
             return <Specifics 
                 title="Qualifications"
-                points={data[0].job_highlights?.qualifications ?? ['N/A']}
+                points={data[0].job_highlights?.Qualifications ?? ['N/A']}
             />
         case "About":
+            return <JobAbout 
+                info={data[0].job_description ?? "No data provided"}
+            />
         case "Responsibilities":
+            return <Specifics 
+                title="Responsibilities"
+                points={data[0].job_highlights?.Responsibilities ?? ['N/A']}
+            />
         default:
             break;
     }
@@ -61,11 +68,10 @@ const displayTabContent = () => {
             />
 
             <>
-                <View 
+                <ScrollView 
                     // showsVerticalScrollIndicator={false} 
                     refreshControl={<RefreshControl refreshing={refreshing} onRefresh={onRefresh}/>}
                 >
-                {/* <View> */}
                     {isLoading ? (
                         <ActivityIndicator size="large" color={COLORS.primary} />
                     ): error ? (
@@ -90,8 +96,9 @@ const displayTabContent = () => {
                             {displayTabContent()}
                         </View>
                     )}
-                    {/* </View> */}
-                </View>
+                </ScrollView>
+
+                <JobFooter url={data[0]?.job_apply_link ?? 'https://www.google.com/about/careers/applications/jobs/results/'}/>
             </>
         </SafeAreaView>
     )
